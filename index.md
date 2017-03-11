@@ -1,1 +1,5 @@
-### arzatskis.github.io
+---
+layout: cover
+---
+
+🙈 🙉 🙊

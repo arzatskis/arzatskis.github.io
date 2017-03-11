@@ -1,0 +1,22 @@
+// Inline styles are bad
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.cover {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.cover__content {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 3em;
+  text-align: center;
+}
