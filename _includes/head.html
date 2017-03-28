@@ -4,8 +4,6 @@
     {% capture style %}
     {% include style.scss %}
     {% endcapture %}
-
-    /* Inline styles are root of all evil */
     {{ style | scssify }}
   </style>
 </head>
