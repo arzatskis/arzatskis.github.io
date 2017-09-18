@@ -15,7 +15,7 @@ had a couple of gigs in-between. During almost 11 years, had an opportunity to l
 [Andrius Baranauskas](https://www.linkedin.com/in/andriusbaranauskas/),
 [Mindaugas Mozuras](https://www.linkedin.com/in/mindaugasmozuras/),
 [Mykolas Dumcius](https://www.linkedin.com/in/mykolasdumcius/) and others. These are the people,
-who shaped me as professional. For me this is a lot more important than nice pictures in any portfolio :)
+who shaped me as professional. For me this is a lot more important than nice pictures in any portfolio.
 
 Spent my whole career designing and coding, switching roles (or doing both) based on company needs.
 Can tackle frontend problems of any size and shape, yet always considered myself as a designer.
