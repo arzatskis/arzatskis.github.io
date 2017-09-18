@@ -57,7 +57,7 @@ body {
 
 .post__content {
   h3 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     margin: 0 0 1em;
   }
 
@@ -94,15 +94,11 @@ body {
   }
 }
 
-.post__action {
-  color: $post-link-highlight;
-}
-
 .post__meta {
   font-size: 60%;
   opacity: 0.5;
 
   &:last-child {
-    margin-top: 6em;
+    margin-top: 3rem;
   }
 }
