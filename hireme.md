@@ -3,7 +3,7 @@ layout: post
 title: Hire me!
 og_title: Hire me!
 og_description: 10+ years of experience designing and coding frontend.
-og_image: https://edvinas.lt/images/hireme/og-cover.png
+og_image: http://edvinas.lt/images/hireme/og-cover.png
 ---
 
 ### Designer / frontender for hire
