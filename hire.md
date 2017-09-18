@@ -1,5 +1,6 @@
 ---
 layout: post
+title: Designer / frontender for hire
 ---
 
 ### Designer / frontender for hire
