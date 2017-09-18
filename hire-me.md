@@ -6,7 +6,7 @@ og_description: 10+ years of experience designing and coding frontend.
 og_image: http://edvinas.lt/images/hireme/og-cover.png
 ---
 
-### Designer / frontender for hire
+### Designer / frontender for&nbsp;hire
 
 Grew up in [Adform](https://adform.com) (3,5yrs), matured in [Vinted](https://vinted.com) (4,5yrs), had a couple of gigs in-between. During almost 11 years, had an opportunity to learn from great leaders such as [Alexey Kovalyov](https://www.linkedin.com/in/aleksejkovaliov/), [Sergejus Barinovas](https://www.linkedin.com/in/sergejus/), [Andrius Baranauskas](https://www.linkedin.com/in/andriusbaranauskas/), [Mindaugas Mozuras](https://www.linkedin.com/in/mindaugasmozuras/), [Mykolas Dumcius](https://www.linkedin.com/in/mykolasdumcius/) and others. These are the people, who shaped me as professional. For me this is a lot more important than nice pictures in any portfolio :)
 
