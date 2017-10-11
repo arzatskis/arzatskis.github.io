@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Wix signup setup</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background: #333;
+        color: #eee;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.75);
+        font-family: sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      .preview {
+        display: block;
+        margin: 0 auto;
+        width: 1441px;
+        max-width: 90vw;
+        text-align: center;
+        position: relative;
+      }
+
+      .screen {
+        display: inline-block;
+        margin: 0;
+        opacity: 0;
+      }
+
+      .screen:not(:first-child) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+
+      .screen.is-on {
+        opacity: 1;
+        z-index: initial;
+      }
+
+      .screen__preview {
+        margin: 6rem auto 3rem;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        position: relative;
+        font-size: 0;
+      }
+
+      .screen__mockup {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .screen__comments {
+        display: block;
+        margin: 0 auto;
+        max-width: 480px;
+      }
+
+      .screen__action {
+        display: inline-block;
+        margin-left: 0.5em;
+        color: #666;
+      }
+
+       .mockup__action {
+        position: relative;
+        overflow: visible;
+        display: inline-block;
+        position: absolute;
+        /*background: rgba(255,0,0,0.25);*/
+      }
+
+       .mockup__action:empty:before,
+       .mockup__action:empty:after {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        content: '';
+
+        animation: pulse 1s infinite linear;
+        border: solid 0.25rem #ff3be3;
+        border-radius: 3rem;
+      }
+
+       .mockup__action:empty:before {
+        margin: -1rem 0 0 -1rem;
+        width: 2rem;
+        height: 2rem;
+      }
+
+       .mockup__action:empty:after {
+        margin: -0.5rem 0 0 -0.5rem;
+        width: 1rem;
+        height: 1rem;
+        border-width: 0.5rem;
+      }
+
+      @keyframes pulse {
+        0% {
+          transform: scale(0);
+        }
+        100% {
+          transform: scale(1);
+          opacity: 0;
+        }
+      }
+
+        #step1 .mockup__action {
+          top: 41%;
+          left: 16.5%;
+          width: 3%;
+          height: 4.7%;
+        }
+
+        #step2 .mockup__action {
+          top: 67.5%;
+          left: 42.5%;
+          width: 9%;
+          height: 4.7%;
+        }
+
+        #step3 .mockup__action {
+          top: 52.5%;
+          left: 1%;
+          width: 18.5%;
+          height: 5%;
+        }
+
+        #step4 .mockup__action {
+          top: 16.5%;
+          left: 1%;
+          width: 18.5%;
+          height: 5%;
+        }
+
+        #step5 .mockup__action {
+          top: 34.5%;
+          left: 1%;
+          width: 18.5%;
+          height: 5%;
+        }
+
+        #step6 .mockup__action {
+          top: 2.5%;
+          left: 1%;
+          width: 2.5%;
+          height: 5%;
+        }
+    </style>
+  </head>
+  <body>
+    <main class="preview">
+      <figure class="screen is-on" id="step1">
+        <div class="screen__preview">
+          <img src="step1.png" class="screen__mockup">
+          <a href="#step2" class="mockup__action" data-action></a>
+        </div>
+        <figcaption class="screen__comments">
+          <strong>1st step:</strong> User starts from pages screen and decides what section he want's to be "members only"
+          <a class="screen__action" data-action href="#step2">Next</a>
+        </figcaption>
+      </figure>
+      <figure class="screen" id="step2">
+        <div class="screen__preview">
+          <img src="step2.png" class="screen__mockup">
+          <a href="#step3" class="mockup__action" data-action></a>
+        </div>
+        <figcaption class="screen__comments">
+          <strong>2nd step:</strong> Clicking page options menu, user goes to page settings and selects it's permissions
+          <a class="screen__action" data-action href="#step3">Next</a>
+        </figcaption>
+      </figure>
+      <figure class="screen" id="step3">
+        <div class="screen__preview">
+          <img src="step3.png" class="screen__mockup">
+          <a href="#step4" class="mockup__action" data-action></a>
+        </div>
+        <figcaption class="screen__comments">
+          <strong>3rd step:</strong> User now has access and can link to signup pages just as any other regular page. No need for standalone "signup link" component with hardcoded values and more overhead - just use links as with any other page.
+          <a class="screen__action" data-action href="#step4">Next</a>
+        </figcaption>
+      </figure>
+      <figure class="screen" id="step4">
+        <div class="screen__preview">
+          <img src="step4.png" class="screen__mockup">
+          <a href="#step5" class="mockup__action" data-action></a>
+        </div>
+        <figcaption class="screen__comments">
+          <strong>4th step:</strong> Tap on the section to customize it's settings and pages. Select the page you want to customize
+          <a class="screen__action" data-action href="#step5">Next</a>
+        </figcaption>
+      </figure>
+      <figure class="screen" id="step5">
+        <div class="screen__preview">
+          <img src="step5.png" class="screen__mockup">
+          <a href="#step6" class="mockup__action" data-action></a>
+        </div>
+        <figcaption class="screen__comments">
+          <strong>5th step:</strong> Page editor shows content outline ("layers") to give user overview what's in there. Click add to custize.
+          <a class="screen__action" data-action href="#step6">Next</a>
+        </figcaption>
+      </figure>
+      <figure class="screen" id="step6">
+        <div class="screen__preview">
+          <img src="step6.png" class="screen__mockup">
+          <a href="#step7" class="mockup__action" data-action></a>
+        </div>
+        <figcaption class="screen__comments">
+          <strong>6th step:</strong> We pick from the list of components as in current Wix editor. Main difference - we suggest and guide members and show related components at the top. Also we add filter, to help find quickly instead of browsing infinite lists
+          <a class="screen__action" data-action href="#step7">Next</a>
+        </figcaption>
+      </figure>
+      <figure class="screen" id="step7">
+        <div class="screen__preview">
+          <img src="step7.png" class="screen__mockup">
+        </div>
+        <figcaption class="screen__comments">
+          <strong>7th step:</strong> Just like this we have customized our signup page :)
+          <a class="screen__action" href="./">Restart prototype</a>
+        </figcaption>
+      </figure>
+    </main>
+
+    <script>
+      (function() {
+        // bling.js
+
+        window.$ = document.querySelectorAll.bind(document);
+
+        Node.prototype.on = window.on = function (name, fn) {
+          this.addEventListener(name, fn);
+        }
+
+        NodeList.prototype.__proto__ = Array.prototype;
+
+        NodeList.prototype.on = NodeList.prototype.addEventListener = function (name, fn) {
+          this.forEach(function (elem, i) {
+            elem.on(name, fn);
+          });
+        }
+
+
+        var screens = $('figure');
+        var actions = $('a[data-action]');
+
+        var handleActionClick = function(event) {
+          var activeSelector = 'is-on';
+
+          event.preventDefault();
+
+          $('.' + activeSelector)[0].classList.remove(activeSelector);
+          $(event.target.hash)[0].classList.add(activeSelector);
+        }
+
+        actions.on('click', handleActionClick);
+      })();
+    </script>
+  </body>
+</html>
