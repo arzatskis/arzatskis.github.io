@@ -5,6 +5,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: arzatskis
 github_username: arzatskis
 
+permalink: /:year/:month/:title:output_ext
+
 # Build settings
 markdown: kramdown
 exclude:
